@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports ImageMagick
+
+Public Class Form1
     Dim index As Integer = 0
     Dim frames As Bitmap()
     WithEvents t As Timer
@@ -42,4 +44,26 @@
         End If
     End Sub
 
+    Private Sub SaveAsGifToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveAsGifToolStripMenuItem.Click
+        If a Is Nothing Then
+            Return
+        End If
+
+        Using collection = New MagickImageCollection
+            For Each frame In a.GetAnimationFrames(NumericUpDown1.Value)
+                Dim img = New MagickImage(frame)
+                img.AnimationDelay = 25
+                img.AnimationIterations = -1
+                collection.Add(img)
+            Next
+
+            Dim settings = New QuantizeSettings
+            settings.Colors = 256
+
+            collection.Quantize(settings)
+            collection.Optimize()
+
+            collection.Write("C:\Users\evanl\OneDrive\Desktop\test.gif")
+        End Using
+    End Sub
 End Class
