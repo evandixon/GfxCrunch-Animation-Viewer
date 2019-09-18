@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AnimationViewer", "AnimationViewer\AnimationViewer.vbproj", "{4C2D5545-A5F9-4131-9379-24B5E890A832}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6A6A8335-FE2C-477F-BFFE-AE3ACAEA1CAE}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C2D5545-A5F9-4131-9379-24B5E890A832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C2D5545-A5F9-4131-9379-24B5E890A832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C2D5545-A5F9-4131-9379-24B5E890A832}.Debug|x86.ActiveCfg = Debug|x86
+		{4C2D5545-A5F9-4131-9379-24B5E890A832}.Debug|x86.Build.0 = Debug|x86
+		{4C2D5545-A5F9-4131-9379-24B5E890A832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C2D5545-A5F9-4131-9379-24B5E890A832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C2D5545-A5F9-4131-9379-24B5E890A832}.Release|x86.ActiveCfg = Release|x86
+		{4C2D5545-A5F9-4131-9379-24B5E890A832}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10B6B0A7-25B5-4ADB-B723-C5E15B0E2D38}
+	EndGlobalSection
+EndGlobal
